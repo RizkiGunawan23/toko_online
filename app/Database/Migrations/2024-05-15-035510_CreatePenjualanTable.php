@@ -19,15 +19,15 @@ class CreatePenjualanTable extends Migration
                 'constraint' => '255',
             ],
             'nomor_handphone' => [
-                'type'       => 'INT',
+                'type'       => 'VARCHAR',
+                'constraint' => '13',
             ],
             'alamat' => [
                 'type'       => 'VARCHAR',
                 'constraint' => '255',
             ],
-            'total_penjualan' => [
-                'type'       => 'DECIMAL',
-                'constraint' => '10,2',
+            'total_harga_jual' => [
+                'type'       => 'INT',
             ],
             'created_at' => [
                 'type'       => 'DATETIME',
